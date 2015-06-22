@@ -31,4 +31,5 @@ bindkey '\033b' backward-word
 bindkey '\033f' forward-word
 bindkey '\033u' history-beginning-search-backward
 bindkey '\033d' history-beginning-search-forward
+bindkey '^R' history-incremental-search-backward
 
