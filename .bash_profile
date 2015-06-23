@@ -11,3 +11,8 @@ fi
 # I want a lot of history
 HISTFILESIZE=10000
 HISTSIZE=10000
+
+# Aliases
+alias ls="ls --color"
+alias lsa="ls -lah"
+alias ll="ls -l"
