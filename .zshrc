@@ -23,6 +23,7 @@ alias gvim=mvim
 #
 setopt NOBEEP
 setopt HIST_IGNORE_DUPS
+setopt histignorespace
 
 ### keymap-stuff
 #
