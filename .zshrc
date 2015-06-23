@@ -16,7 +16,7 @@ alias grep="grep -E --color=auto"
 alias man="LANG=en_EN man"
 alias gvim=mvim
 
-if [[ `uname` -eq "Darwin" ]]; then
+if [[ `uname` == "Darwin" ]]; then
     # this seems to be OSX
     alias ls="ls -G"
 else
