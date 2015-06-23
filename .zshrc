@@ -10,14 +10,22 @@ export EDITOR="/usr/bin/vim"
 
 ### aliases
 #
-alias ls="ls -G"
 alias irb='irb --readline -r irb/completion'
-alias lsa="ls -lah"
-alias ll="ls -l"
 alias vi="vim"
 alias grep="grep -E --color=auto"
 alias man="LANG=en_EN man"
 alias gvim=mvim
+
+if [[ `uname` -eq "Darwin" ]]; then
+    # this seems to be OSX
+    alias ls="ls -G"
+else
+    # this seems to be linux
+    alias ls="ls --color"
+fi
+
+alias lsa="ls -lah"
+alias ll="ls -l"
 
 ### options
 #
