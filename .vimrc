@@ -27,6 +27,7 @@ set listchars=tab:▸\ ,eol:¬
 
 nnoremap <leader>n :noh<cr>
 nnoremap <leader>l :set list!<cr>
+nnoremap <leader>c :set cursorcolumn!<cr>
 " source the appropriate .rc files
 nmap <leader>so :source ~/.vimrc<cr>:ec "sourced ~/.vimrc"<cr>
 
