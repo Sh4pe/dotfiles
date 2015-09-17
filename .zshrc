@@ -33,6 +33,11 @@ setopt NOBEEP
 setopt HIST_IGNORE_DUPS
 setopt histignorespace
 
+### vim stuff
+#
+bindkey -v
+export KEYTIMEOUT=1
+
 ### keymap-stuff
 #
 bindkey '\033b' backward-word
@@ -40,8 +45,4 @@ bindkey '\033f' forward-word
 bindkey '\033u' history-beginning-search-backward
 bindkey '\033d' history-beginning-search-forward
 bindkey '^R' history-incremental-search-backward
-
-### vim stuff
-#
-bindkey -v
-export KEYTIMEOUT=1
+bindkey '^S' history-incremental-search-forward
