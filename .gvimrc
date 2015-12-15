@@ -1,6 +1,6 @@
 " stuff for MacVim
 colorscheme blackboard
-set guifont=Menlo_Regular:h12
+set guifont=Menlo_Regular:h14
 
 " hide toolbar
 set go-=T
