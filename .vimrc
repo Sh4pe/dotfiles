@@ -2,7 +2,6 @@ set nocompatible
 set nu
 syntax on
 set backspace=2
-set autoindent
 set cpoptions-=u
 set hlsearch
 set nofoldenable
@@ -14,16 +13,21 @@ set encoding=utf-8
 set autoindent
 set cursorline
 set ruler
-" relativenumber for every new buffer
-au bufread * set relativenumber
-" if we change .(g)vimrc and source it, relativenumber is lost unless it is
-" set manually
 set relativenumber
 set ignorecase
 set smartcase
+set smarttab
+set smartindent
 set incsearch
 set showmatch
+set showmode
 set listchars=tab:▸\ ,eol:¬
+set completeopt=menuone,menu,longest
+
+set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
+set wildmode=longest,list,full
+set wildmenu
+set completeopt+=longest
 
 nnoremap <leader>n :noh<cr>
 nnoremap <leader>l :set list!<cr>
