@@ -5,7 +5,7 @@ export HISTSIZE=20000
 export SAVEHIST=20000
 export HISTFILE=~/.zsh/zsh_history
 export LSCOLORS="Exfxcxdxbxegedabagacad"
-export PATH=$PATH:/Users/david/local/bin:/Users/dnies/local/bin:/opt/local/bin
+export PATH=$PATH:/Users/david/local/bin:/Users/dnies/local/bin:/opt/local/bin:$HOME/.local/bin
 export EDITOR="/usr/bin/vim"
 
 ### aliases
