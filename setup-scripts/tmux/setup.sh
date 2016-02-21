@@ -11,7 +11,7 @@ if [[ ! -d "$TPM_DIR" ]]; then
 fi
 
 ## Make symlink to .tmux.conf if it's not there
-if [[ ! -h "$HOME/.tmux.conf" ]]; then
+if [[ ! -L "$HOME/.tmux.conf" ]]; then
     echo "Creating symlink for .tmux.conf..."
     ln -s $(realpath $SCRIPT_DIR/../../tmux.conf) $HOME/.tmux.conf
 fi
