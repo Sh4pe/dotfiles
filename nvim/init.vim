@@ -32,14 +32,6 @@ nnoremap <leader>n :noh<cr>
 nnoremap <leader>l :set list!<cr>
 nnoremap <leader>c :set cursorcolumn!<cr>
 
-" source the appropriate .rc files
-nmap <leader>so :source ~/.vimrc<cr>:ec "sourced ~/.vimrc"<cr>
-
-
-" open ~/.vimrc or ~/.gvimrc in new tab
-command! -nargs=0 Vimrc tabe ~/.vimrc
-command! -nargs=0 Gvimrc tabe ~/.gvimrc
-
 " error on trailing whitespaces
 nnoremap <leader>t :match ErrorMsg '\s\+$'<cr>
 
