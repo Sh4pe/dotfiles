@@ -50,7 +50,3 @@ au BufNewFile,BufRead *.rb set tabstop=2 | set shiftwidth=2
 au BufNewFile,BufRead *.go set filetype=go
 au BufNewFile,BufRead *.mm set filetype=objc
 au BufNewFile,BufRead *.clj set tabstop=2 | set shiftwidth=2 | set colorcolumn=80
-
-
-" pathogen
-execute pathogen#infect()
