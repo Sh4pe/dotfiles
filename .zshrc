@@ -46,3 +46,5 @@ bindkey '\033u' history-beginning-search-backward
 bindkey '\033d' history-beginning-search-forward
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
